@@ -8,7 +8,7 @@
 <h1>SpringEL 표현식</h1>
 <ul>Object
     <li>${singleUser.username} = <span th:text="${singleUser.username}"></span></li>
-    <li>${user['username']} = <span th:text="${['username']}"></span></li>
+    <li>${user['username']} = <span th:text="${singleUser['username']}"></span></li>
     <li>${user.getUsername()} = <span th:text="${singleUser.getUsername()}"></span>
     </li>
 </ul>
