@@ -15,6 +15,7 @@
 <h1>편의 객체</h1> <ul>
     <li>Request Parameter = <span th:text="${param.paramData}"></span></li>
     <li>session = <span th:text="${session.sessionData}"></span></li>
+     <!-- 타임리프에서 스프링 빈을 직접 다룰 수 있음 -->
     <li>spring bean = <span th:text="${@helloBean.hello('Spring!')}"></span></li></ul>
 </body>
 </html>
