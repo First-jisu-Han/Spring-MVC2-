@@ -24,6 +24,14 @@ public class BasicController {
         return "basic/text-basic";
     }
 
+    // URL 링크 - 타임리프 처리하기
+    @GetMapping("/link")
+    public String link(Model model) {
+        model.addAttribute("param1", "data1"); // data1이라는 스트링을 넣을것
+        model.addAttribute("param2", "data2"); // data2라는 스트링을 넣을것
+        return "basic/link";
+    }
+
     @GetMapping("/text-unescaped")
     public String textUnescaped(Model model) {
         model.addAttribute("data", "Hello <b>Jisu!</b>");
