@@ -23,5 +23,12 @@
     <li>${userMap['userA']['username']} = <span th:text="${map['user1']['username']}"></span></li>
     <li>${userMap['userA'].getUsername()} = <span th:text="${map['user1'].getUsername()}"></span></li>
 </ul>
+
+
+<!--타임리프로 변수 선언하는 방법-->
+<h1>지역 변수 - (th:with)</h1>
+<div th:with="first=${list[0]}">
+    <p>처음 사람의 이름은 <span th:text="${first.username}"></span></p>
+</div>
 </body>
 </html>
